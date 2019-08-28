@@ -1,7 +1,7 @@
 new Vue({
     el: '#app',
     data: {
-        greeting: '↓↓↓↓↓ Click ↓↓↓↓↓',
+        greeting: '↓↓ Click ↓↓',
         user: 'kkwong',
         city: 'KT'
     },
