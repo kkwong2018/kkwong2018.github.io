@@ -1,24 +1,55 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="stylesheet" href="./styles.css" />
     <meta charset="utf-8">
-    <!--   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-  <!-- <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
     <div id="app">
         <h2>{{ greeting }}</h2>
 
-        <button class="blue large button" @click="changeGreeting">
+        <button class="btn btn-outline-primary btn-lg"  @click="changeGreeting">
             Pick One Now!
         </button>
     </div>
 
     <script src="https://unpkg.com/vue"></script>
     <script src="./main.js"></script>
- <!--   <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
+<style scoped>
+    #app {
+        padding-top:  20%;
+        padding-left: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body {
+        background: #b7c2b1;
+    }
+
+    h2 {
+        text-align: center;
+        color: #555;
+        font-size: 100px;
+        font-family: sans-serif, helvetica;
+        text-shadow: rgb(234, 234, 237) 2px -2px;
+    }
+
+    .btn-lg {
+        padding: 50px 80px;
+        font-size: 50px;
+        border-radius: 50px;
+    }
+
+</style>
+
 </html>
