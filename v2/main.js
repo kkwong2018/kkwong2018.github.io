@@ -1,7 +1,7 @@
 new Vue({
     el: '#app',
     data: {
-        greeting: '↓↓ Click ↓↓',
+        greeting: '↓↓ 入選項  再抽啦 ↓↓',
         input1: '',
         input2: '',
         input3: '',
