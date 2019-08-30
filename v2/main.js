@@ -19,8 +19,9 @@ new Vue({
                 this.input5
             ]
             var num = Math.floor(Math.random() * itemsArray.length);
-            if (itemsArray[num] === '') {
-                changeGreeting();
+            if (itemsArray[num] == '' || itemsArray[num] == this.greeting) {
+                this.changeGreeting();
+                return;
             }
             //this.greeting = genName(num);
             this.greeting = itemsArray[num];
