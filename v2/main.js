@@ -6,7 +6,8 @@ new Vue({
         input2: '',
         input3: '',
         input4: '',
-        input5:'',
+        input5: '',
+        temp:0
     },
     methods: {
         changeGreeting() {
@@ -19,12 +20,14 @@ new Vue({
                 this.input5
             ]
             var num = Math.floor(Math.random() * itemsArray.length);
-            if (itemsArray.length == 0) {
+            if (this.temp == 5) {
                 this.greeting = '入個選項吧！';
+                return
             }
 
             if (itemsArray[num] == '' || itemsArray[num] == this.greeting) {
                 this.changeGreeting();
+                this.temp++;
                 return;
             }
             //this.greeting = genName(num);
