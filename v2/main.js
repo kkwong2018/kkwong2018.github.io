@@ -1,7 +1,7 @@
 new Vue({
     el: '#app',
     data: {
-        greeting: '↓↓ 入選項  再抽啦 ↓↓',
+        greeting: '↓↓↓↓↓',
         input1: '',
         input2: '',
         input3: '',
@@ -19,6 +19,10 @@ new Vue({
                 this.input5
             ]
             var num = Math.floor(Math.random() * itemsArray.length);
+            if (itemsArray.length == 0) {
+                this.greeting = '入個選項吧！';
+            }
+
             if (itemsArray[num] == '' || itemsArray[num] == this.greeting) {
                 this.changeGreeting();
                 return;

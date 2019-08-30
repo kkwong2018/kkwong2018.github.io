@@ -11,18 +11,21 @@
     <div id="app">
         <h2>{{ greeting }}</h2>
 
-        <button class="btn btn-outline-primary btn-lg"  @click="changeGreeting">
-            抽啦 !
-        </button>
-
         <div class='padding' style="padding: 10px"></div>
 
-        <p><mark>輸入選項 ：<mark> </p>
+        <p><mark>先輸入選項 ：<mark> </p>
         <input type=text v-model="input1" style="padding: 2px" placeholder=" 選項 1" />
         <input type=text v-model="input2" style="padding: 2px" placeholder=" 選項 2" />
         <input type=text v-model="input3" style="padding: 2px" placeholder=" 選項 3" />
         <input type=text v-model="input4" style="padding: 2px" placeholder=" 選項 4" />
         <input type=text v-model="input5" style="padding: 2px" placeholder=" 選項 5" />
+
+        <div class='padding' style="padding: 10px"></div>
+
+        <button class="btn btn-outline-primary btn-lg"  @click="changeGreeting">
+                抽啦 !
+        </button>
+
     </div>
 
     <script src="https://unpkg.com/vue"></script>
